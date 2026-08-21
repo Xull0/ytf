@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>星屑茶会 · 斗罗大陆主题</title>
+<title>咏唐赋</title>
 <style>
 
 :root {
@@ -816,6 +816,140 @@ body {
   object-fit: cover !important;
   display: block !important;
 }
+/*===== 跟团教程 常见答疑模块 =====*/
+.faq-wrap { margin-top: 32px; }
+.faq-item {
+  background: var(--card);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:20px;
+  margin-bottom:16px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+.faq-item:hover {
+  box-shadow: 0 8px 30px rgba(92,75,55,0.14);
+  transform: translateY(-2px);
+}
+.faq-title {
+  font-size:16px;
+  font-weight:600;
+  color: var(--text);
+  margin-bottom:10px;
+}
+.faq-desc {
+  font-size:13px;
+  color: var(--text-light);
+  line-height:1.8;
+  margin-bottom:12px;
+}
+.faq-img {
+  width:100%;
+  border-radius:6px;
+  border:1px solid var(--border);
+  object-fit: contain;
+  background:#fff;
+}
+@media (max-width:600px) {
+  .faq-item { padding:14px; }
+}
+/* ===== 团咪名片 ===== */
+.team-wrap { margin-top: 8px; }
+.team-label {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .team-grid { grid-template-columns: 1fr; max-width: 260px; }
+}
+.team-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 14px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: all 0.35s ease;
+}
+.team-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(92,75,55,0.14);
+}
+.team-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-light), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 10px;
+  border: 3px solid var(--bg);
+  box-shadow: 0 4px 12px rgba(201,123,99,0.2);
+}
+.team-cn {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+.team-role {
+  font-size: 11px;
+  color: var(--accent);
+  background: rgba(201,123,99,0.08);
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+.team-wx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: var(--bg-stripe);
+  border: 1.5px dashed var(--border);
+  border-radius: 8px;
+  padding: 9px 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 12.5px;
+  color: var(--text);
+  user-select: none;
+}
+.team-wx:hover {
+  background: rgba(201,123,99,0.06);
+  border-color: var(--accent-light);
+}
+.wx-id {
+  font-family: monospace;
+  font-weight: 600;
+  color: var(--accent-dark);
+  font-size: 13px;
+}
+.wx-copy {
+  font-size: 10px;
+  color: var(--text-light);
+  margin-left: 2px;
+}
+.team-hint {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-light);
+  margin-top: 12px;
+}
 </style>
 
 <base target="_blank">
@@ -828,7 +962,7 @@ body {
 
   <div class="nav-inner">
 
-    <div class="nav-logo">星屑茶会</div>
+    <div class="nav-logo">咏唐赋</div>
 
     <div class="nav-links">
 
@@ -850,13 +984,13 @@ body {
 
     <div class="hero">
 
-      <div class="hero-deco">✦ O S H I R A S E ✦</div>
+      <div class="hero-deco">✦ Y O N G T A N G F U ✦</div>
 
-      <h1 class="hero-title">星屑茶会</h1>
+      <h1 class="hero-title">咏唐赋</h1>
 
       <div class="hero-line"></div>
 
-      <p class="hero-sub">同人周边拼团 · 用心挑选每一份谷子</p>
+      <p class="hero-sub">斗罗大陆同人周边拼团</p>
 
       <!-- ===== 斗罗大陆 SVG 视觉区 ===== -->
 
@@ -1217,7 +1351,7 @@ body {
 
         <div class="hero-text-overlay">
 
-          <div class="hero-tag">斗罗大陆 · 同人周边</div>
+          <div class="hero-tag">咏唐赋</div>
 
           <div class="hero-motto">蓝银为誓，柔骨为盟</div>
 
@@ -1229,21 +1363,51 @@ body {
 
       <div class="hero-desc">
 
-        <p>欢迎来到星屑茶会！我们是一个专注于精致同人周边的拼团社团，<br>致力于为同好们带来高品质、设计独特的谷子。</p>
+        <p>欢迎来到咏唐赋！<br>我们已开团2年，都已正常发货。不会跑路，请放心购买！</p>
 
-        <p>目前 5 个群共 1,987 位团员，每周稳定开新团。</p>
-
-        <p>新人请先看「跟团教程」，有任何问题可以右下角找客服小助手～</p>
+        <p>新人请先看「跟团教程」，有任何问题可以右下角找客服小助手～
+</p>
+		<p>有其他问题可以群里问</p>
+        <div class="team-wrap">
+          <p class="team-label">✦ 两位团咪联系方式 ✦</p>
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-avatar">
+                <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEZmwJqiFs1jRvPsUrBJb1nBCx4dzdS8gACni0AAgK8QFReL-dxd2dZYD0E.jpg" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+              </div>
+              <div class="team-cn">阿京</div>
+              <div class="team-role">团咪[拼团呀：年]</div>
+              <div class="team-wx" onclick="copyWx(this)">
+                <span>💬</span>
+                <span class="wx-id">Xuuul8888</span>
+                <span class="wx-copy">点击复制</span>
+              </div>
+            </div>
+            <div class="team-card">
+             <div class="team-avatar">
+                             <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEZmwNqiFs4sHULEwqqh57N8Zn-qQySEAACny0AAgK8QFQBKeHum6qqIj0E.png" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+                           </div>
+              <div class="team-cn">菠萝心</div>
+              <div class="team-role" style="color: #00b4d8; background: rgba(0,180,216,0.08);">团咪[拼团呀：窝有一颗菠萝心]</div>
+              <div class="team-wx" onclick="copyWx(this)">
+                <span>💬</span>
+                <span class="wx-id">Evnyikoil</span>
+                <span class="wx-copy">点击复制</span>
+              </div>
+            </div>
+          </div>
+          <p class="team-hint">加好友请备注来意～</p>
+        </div>
 
       </div>
 
       <div class="hero-stats">
 
-        <div class="h-stat"><div class="h-stat-num">47</div><div class="h-stat-label">在售商品</div></div>
+        <div class="h-stat"><div class="h-stat-num">99+</div><div class="h-stat-label">在售商品</div></div>
 
-        <div class="h-stat"><div class="h-stat-num">12</div><div class="h-stat-label">正在开团</div></div>
+        <div class="h-stat"><div class="h-stat-num">3</div><div class="h-stat-label">正在开团</div></div>
 
-        <div class="h-stat"><div class="h-stat-num">1,987</div><div class="h-stat-label">团员</div></div>
+        
 
       </div>
 
@@ -1272,15 +1436,13 @@ body {
           <!-- 只保留 1 套 carousel！所有图片全部放到 track 内部 -->
           <div class="carousel" data-index="0">
             <div class="carousel-track">
-              <img src="images/4p/goods1-1.jpg" alt="风萧萧" class="carousel-slide">
-              <img src="images/4p/goods1-2.jpg" alt="洛春赋" class="carousel-slide">
-              <img src="images/4p/goods1-3.png" alt="山有木兮" class="carousel-slide">
-              <img src="images/4p/goods1-4.jpg" alt="神谕" class="carousel-slide">
-              <img src="images/4p/goods1-5.jpg" alt="神谕" class="carousel-slide">
-              <img src="images/4p/goods1-6.jpg" alt="百变小舞" class="carousel-slide">
-              <img src="images/4p/goods1-7.jpg" alt="情头" class="carousel-slide">
-              <img src="images/4p/goods1-8.jpg" alt="纯白誓言" class="carousel-slide">
-              <img src="images/4p/goods1-9.jpg" alt="闪粉悖论" class="carousel-slide">
+              <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEZmrxqiFVKx88p1BPdvVBwrqDWymTEigACTS0AAgK8QFTFkiLXzRvnaT0E.jpg" alt="风萧萧" class="carousel-slide">
+              <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEZmr1qiFVNn2-Nr7FuMEHkeFODp675VwACTi0AAgK8QFR9U9hYcV1gtz0E.jpg" alt="洛春赋" class="carousel-slide">
+              <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEZmr5qiFVQrGWSt2IYnXW7npKWNPLskwACTy0AAgK8QFRIPygK4fFvMT0E.png" alt="山有木兮" class="carousel-slide">
+              <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEZmr9qiFVTmMBFRFp6PCI7xES1SkVHZwACUC0AAgK8QFROyD9U1i6HoD0E.jpg" alt="神谕" class="carousel-slide">
+              <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEZmsFqiFVaDWfw7dw0VICuhLDRuXd7mAACUi0AAgK8QFSDqBh-kTaaJz0E.jpg" alt="百变小舞" class="carousel-slide">
+              <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEZmsJqiFVcJMYMI_lF4QhMHCeGbQ4t6AACUy0AAgK8QFQLNqfoXbXYlT0E.jpg" alt="情头" class="carousel-slide">
+              <img src="https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAEZmsNqiFVqFZPFojSlI-klfk3vriNpoQACVC0AAgK8QFSBiacCqONsXz0E.jpg" alt="闪粉悖论" class="carousel-slide">
             </div>
             <button class="carousel-prev" onclick="moveCarousel(this,-1)">&#8249;</button>
             <button class="carousel-next" onclick="moveCarousel(this,1)">&#8250;</button>
@@ -1388,7 +1550,7 @@ body {
 
             <div class="step-title">浏览种草</div>
 
-            <div class="step-desc">在「目前开的团」页面查看商品，确认想吃的角色和制品类型，记下商品名称。</div>
+            <div class="step-desc">在「目前开的团」页面查看稿/美工图，确认想吃的稿图。</div>
 
           </div>
 
@@ -1400,9 +1562,9 @@ body {
 
           <div class="step-body">
 
-            <div class="step-title">小程序排谷</div>
+            <div class="step-title">小程序下单</div>
 
-            <div class="step-desc">点击商品卡片的「去小程序排谷」按钮，会自动唤起微信跳转到拼团小程序，按格式留言：CN + 角色名 + 制品 + 数量。<br>例：小星 角色A 双闪吧唧 ×2</div>
+            <div class="step-desc">点击商品卡片的「去小程序下单」按钮，按弹窗步骤复制小程序链接，勾选喜欢的商品加入购物车，下单按格式备注：CN + wx/qq号<br>例：小A abcdefghij</div>
 
           </div>
 
@@ -1414,27 +1576,27 @@ body {
 
           <div class="step-body">
 
-            <div class="step-title">交定金/全款</div>
+            <div class="step-title">交定金/全款（一定要记得拍邮费）</div>
 
-            <div class="step-desc">按群公告收款码付款，务必备注 CN + 角色名，付款后截图发群里。</div>
-
-          </div>
-
-        </div>
-
-        <div class="step">
-
-          <div class="step-num">4</div>
-
-          <div class="step-body">
-
-            <div class="step-title">等尾款通知</div>
-
-            <div class="step-desc">截团后团咪会通知补尾款，补款后等发货排表，收到单号就可以查物流啦。</div>
+            <div class="step-desc">扫链接里收款码付款，务必备注拼团单号，付款后回到小程序上传截图；如果交定金请在订单备注付尾款的时间</div>
 
           </div>
 
         </div>
+		<div class="step">
+		
+		  <div class="step-num">4</div>
+		
+		  <div class="step-body">
+		
+		    <div class="step-title">等待审核</div>
+		
+		    <div class="step-desc">上传付款截图后团咪会在24h内审核，审核完毕后订单状态会改为已付款</div>
+		
+		  </div>
+		
+		</div>
+        
 
         <div class="step">
 
@@ -1442,9 +1604,10 @@ body {
 
           <div class="step-body">
 
-            <div class="step-title">收货晒单</div>
+            <div class="step-title">收货返图</div>
 
-            <div class="step-desc">收到货后欢迎返图！优质返图有机会上首页精选，还有可能获得下次开团小优惠哦～</div>
+            <div class="step-desc">每个链接内都有发货时间，发货后会在小程序上传单号，收到货后欢迎返图！<br>有返图的可以传QQ群返图相册（qq群号：632864638），每批都会抽喜欢的送赠品（赠品随下批发）
+			<br>发小红书的话可以艾特团咪看呀，小红书号344535653</div>
 
           </div>
 
@@ -1453,6 +1616,7 @@ body {
       </div>
 
     </div>
+
 
     <div class="sec-title" style="margin-top:40px">
 
@@ -1469,20 +1633,14 @@ body {
       <div class="terms-grid">
 
         <div class="term-item"><div class="term-word">肾</div><div class="term-mean">钱的代称，「交肾」= 付款</div></div>
+        <div class="term-item"><div class="term-word">立肾</div><div class="term-mean">下单之后立马付款</div></div>
 
         <div class="term-item"><div class="term-word">排谷</div><div class="term-mean">在小程序/表格里登记想买的商品</div></div>
 
-        <div class="term-item"><div class="term-word">捆</div><div class="term-mean">热门角色需要带冷门角色一起买</div></div>
-
-        <div class="term-item"><div class="term-word">推车</div><div class="term-mean">推销冷门角色，成功可解捆</div></div>
-
-        <div class="term-item"><div class="term-word">躺吃</div><div class="term-mean">不推车直接吃热门，需多捆</div></div>
-
         <div class="term-item"><div class="term-word">CN</div><div class="term-mean">吃谷昵称，付款和排谷时备注用</div></div>
 
-        <div class="term-item"><div class="term-word">成配</div><div class="term-mean">达到最低成团数量，可以下单制作</div></div>
-
-        <div class="term-item"><div class="term-word">流团</div><div class="term-mean">未达成团数，订单取消退款</div></div>
+        <div class="term-item"><div class="term-word">流团</div><div class="term-mean">未达成团数，订单取消，退款处理</div></div>
+        <div class="term-item"><div class="term-word">掉落</div><div class="term-mean">跑单或者截团前一直没有补邮，超过期限就会掉落，不退款</div></div>
 
       </div>
 
@@ -1502,18 +1660,15 @@ body {
 
       <div class="rules">
 
-        <span class="rule-chip">截团后不可撤排</span>
+        <span class="rule-chip">下单后除流团不退款</span>
 
-        <span class="rule-chip">跑单定金不退并拉黑</span>
+        <span class="rule-chip">下单立肾，除链接内有写可以15或3天交肾的</span>
 
-        <span class="rule-chip">推车可解捆</span>
+        <span class="rule-chip">禁大吃大吐（下单很多，过几天又取消）</span>
 
-        <span class="rule-chip">躺吃1捆2</span>
-
-        <span class="rule-chip">交肾务必备注CN</span>
-
-        <span class="rule-chip">囤货期3个月</span>
-
+        <span class="rule-chip">交肾务必备注拼团单号</span>
+		<span class="rule-chip">完美主义慎入，默认厂瑕</span>
+		<span class="rule-chip">禁宣团，可以不刷屏出物</span>
         <span class="rule-chip">未成年默认家长同意</span>
 
       </div>
@@ -1580,9 +1735,9 @@ body {
 
 <footer class="footer">
 
-  <p>星屑茶会 · 同人周边拼团</p>
+  <p>咏唐赋 · 同人周边拼团</p>
 
-  <p style="margin-top:6px;opacity:0.6">Template inspired by OSHIRASE</p>
+  <p style="margin-top:6px;opacity:0.6">Inspired by 几朝京词</p>
 
 </footer>
 
@@ -1608,51 +1763,10 @@ body {
   </div>
 </div>
 
-<button class="chat-float" id="chatFloat" onclick="toggleChat()">💬</button>
 
-<div class="chat-window" id="chatWindow">
+   
 
-  <div class="chat-header">
-
-    <div class="chat-header-info">
-
-      <div class="chat-avatar">🌸</div>
-
-      <div>
-
-        <div class="chat-header-title">小星助手</div>
-
-        <div class="chat-header-sub">跟团问题 / 斗罗大陆知识 随时问～</div>
-
-      </div>
-
-    </div>
-
-    <button class="chat-close" onclick="toggleChat()">×</button>
-
-  </div>
-
-  <div class="chat-body" id="chatBody">
-
-    <div class="chat-msg bot">哈喽～我是小星助手！✨ 关于拼团的问题（怎么排谷、交肾、团规）或者斗罗大陆原著的任何问题都可以问我哦～</div>
-
-    <div class="api-tip">
-
-      <b>⚠️ 使用前请配置 API Key</b><br>
-
-      请在代码中搜索 <code>YOUR_API_KEY_HERE</code> 替换成你的 SiliconFlow API Key 才能正常使用聊天功能。
-
-    </div>
-
-  </div>
-
-  <div class="chat-input-bar">
-
-    <input class="chat-input" id="chatInput" placeholder="输入你的问题..." onkeypress="if(event.key==='Enter') sendChat()">
-
-    <button class="chat-send" id="chatSend" onclick="sendChat()">发送</button>
-
-  </div>
+  
 
 </div>
 
@@ -1909,116 +2023,26 @@ function goTab(n) {
 
 }
 
-const API_KEY = "YOUR_API_KEY_HERE";
 
-const API_URL = "https://api.siliconflow.cn/v1/chat/completions";
 
-const MODEL = "Qwen/Qwen2.5-7B-Instruct";
-
-let chatHistory = [{
-
-  role: "system",
-
-  content: `你是「星屑茶会」的智能客服小助手，同时也是斗罗大陆原著的资深专家。\n\n【身份设定】\n- 你是团咪的得力助手，熟悉同人团拼团的全部流程和术语\n- 你是斗罗大陆（唐家三少原著）的资深读者，对剧情、人物、魂技、魂环、武魂、魂骨、神位等了如指掌\n- 你性格活泼可爱，像 knowledgeable 的二次元同好，偶尔使用颜文字 (◍•ᴗ•◍) ✧*。\n\n【回答规范】\n1. 回答拼团问题时：简洁清晰，用新人能听懂的话解释术语\n2. 回答斗罗大陆问题时：基于原著内容，准确详细，不编造剧情\n3. 如果不确定答案，诚实说明"这个我不太确定呢"，绝不瞎编\n4. 语气亲切自然，像朋友聊天，不要用客服腔\n5. 每次回复控制在200字以内，除非用户要求详细解释`
-
-}];
-
-function toggleChat() {
-
-  const win = document.getElementById('chatWindow');
-
-  const btn = document.getElementById('chatFloat');
-
-  const isOpen = win.classList.contains('open');
-
-  if (isOpen) { win.classList.remove('open'); btn.classList.remove('hidden'); }
-
-  else { win.classList.add('open'); btn.classList.add('hidden'); }
-
-}
-
-async function sendChat() {
-
-  const input = document.getElementById('chatInput');
-
-  const sendBtn = document.getElementById('chatSend');
-
-  const body = document.getElementById('chatBody');
-
-  const text = input.value.trim();
-
-  if (!text) return;
-
-  if (API_KEY === "YOUR_API_KEY_HERE") {
-
-    body.innerHTML += `<div class="chat-msg user">${escapeHtml(text)}</div>`;
-
-    body.innerHTML += `<div class="chat-msg error">请先配置 API Key 才能使用聊天功能～在代码里搜索 YOUR_API_KEY_HERE 替换即可</div>`;
-
-    input.value = ''; body.scrollTop = body.scrollHeight; return;
-
-  }
-
-  body.innerHTML += `<div class="chat-msg user">${escapeHtml(text)}</div>`;
-
-  input.value = ''; body.scrollTop = body.scrollHeight;
-
-  const loadingId = 'load-' + Date.now();
-
-  body.innerHTML += `<div class="chat-msg loading" id="${loadingId}">正在思考...</div>`;
-
-  body.scrollTop = body.scrollHeight; sendBtn.disabled = true;
-
-  chatHistory.push({ role: "user", content: text });
-
-  try {
-
-    const res = await fetch(API_URL, {
-
-      method: "POST",
-
-      headers: { "Content-Type": "application/json", "Authorization": `Bearer ${API_KEY}` },
-
-      body: JSON.stringify({ model: MODEL, messages: chatHistory, temperature: 0.7, max_tokens: 512 })
-
-    });
-
-    const data = await res.json();
-
-    document.getElementById(loadingId).remove();
-
-    if (!res.ok || data.error || !data.choices?.[0]?.message) {
-
-      body.innerHTML += `<div class="chat-msg error">抱歉，服务暂时出错了，请稍后再试～ (◞‸◟；)</div>`;
-
-    } else {
-
-      const reply = data.choices[0].message.content;
-
-      body.innerHTML += `<div class="chat-msg bot">${escapeHtml(reply)}</div>`;
-
-      chatHistory.push({ role: "assistant", content: reply });
-
-    }
-
-  } catch (e) {
-
-    document.getElementById(loadingId).remove();
-
-    body.innerHTML += `<div class="chat-msg error">网络开小差了，再试一次吧～</div>`;
-
-  }
-
-  sendBtn.disabled = false; body.scrollTop = body.scrollHeight;
-
-}
 
 function escapeHtml(text) {
 
   const div = document.createElement('div'); div.textContent = text; return div.innerHTML;
 
 }
-
+// 复制微信号
+function copyWx(el) {
+  const wxId = el.querySelector('.wx-id').textContent;
+  const done = () => {
+    showMpToast('✅ 已复制微信号：' + wxId);
+  };
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(wxId).then(done).catch(() => fallbackCopy(wxId, done));
+  } else {
+    fallbackCopy(wxId, done);
+  }
+}
 </script>
 
 </body>
